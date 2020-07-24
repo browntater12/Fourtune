@@ -1,0 +1,3 @@
+secretKey = 'gAf/eAUx3ZGA9T0ajOwMYyfbK1I/OTP01bG78WoB'
+idKey = 'AKBBDE7X1LZK8K08L6G6'
+alphaVantage = '7FYPYYT7XKZ339XO'
