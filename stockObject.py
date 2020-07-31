@@ -1,4 +1,4 @@
-from paper_config import *
+from config import *
 import requests, json
 import alpaca_trade_api as tradeapi
 
@@ -88,13 +88,15 @@ class stock:
     def position(self, symbol):
         print(self.alpaca.get_position(symbol))
 
+    def bars(self, symbol, time, limit, end):
+        self.alpaca.get_barset(symbol, time, limit=limit, end=end)
 
-investment = stock()
-investment.account_balance()
-lt = investment.last_trade("WKHS")
-investment.absolute_value(lt)
+#investment = stock()
+#investment.account_balance()
+#lt = investment.last_trade("WKHS")
+#investment.absolute_value(lt)
 # investment.buy("WKHS", 100, "buy", price, "limit", "fok") #(symbol, qty, side, type, limit_price, time_in_force)
 # investment.position("RCL")
-print("hello world")
+#print("hello world")
 
 
