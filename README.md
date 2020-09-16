@@ -1,1 +1,3 @@
 # Fourtune
+
+Algorithmic Trading Scripts
